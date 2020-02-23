@@ -61,6 +61,9 @@ html {
 }
 
 header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,6 +73,8 @@ header {
   max-width: 1100px;
   margin: auto;
   max-height: 4rem;
+  background: #fff;
+  z-index: 50;
 }
 
 header ul {
@@ -97,8 +102,8 @@ header ul li .btn {
 }
 
 .logo-container {
-  height: 100%;
-  width: 100px;
+  height: 90%;
+  width: 80px;
 }
 
 .logo-container img {
@@ -359,11 +364,15 @@ main section {
 .hero h1,
 .hero p {
   color: #fff;
+  -webkit-animation: floatUp 1s linear;
+          animation: floatUp 1s linear;
 }
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  -webkit-animation: floatDown 1s linear;
+          animation: floatDown 1s linear;
 }
 
 .hero .container {
@@ -375,6 +384,34 @@ main section {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
+}
+
+@-webkit-keyframes floatDown {
+  from {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@keyframes floatDown {
+  from {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+}
+
+@-webkit-keyframes floatUp {
+  from {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+}
+
+@keyframes floatUp {
+  from {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
 }
 
 .grid {
@@ -451,6 +488,44 @@ main section {
   margin: 0 0 0.5rem 0;
 }
 
+.main-contact .locations div:nth-child(1) {
+  -webkit-animation: floatRight 1s linear;
+          animation: floatRight 1s linear;
+}
+
+.main-contact .locations div:nth-child(2) {
+  -webkit-animation: floatLeft .8s linear;
+          animation: floatLeft .8s linear;
+}
+
+@-webkit-keyframes floatRight {
+  from {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+@keyframes floatRight {
+  from {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+}
+
+@-webkit-keyframes floatLeft {
+  from {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes floatLeft {
+  from {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
 .form {
   margin-bottom: 3rem;
 }
@@ -495,10 +570,14 @@ main section {
   font-size: 3rem;
   margin: 0 0 0.5rem 0;
   text-align: center;
+  -webkit-animation: floatDown 1s linear;
+          animation: floatDown 1s linear;
 }
 
 .main-donations .header p {
   margin: 1rem;
+  -webkit-animation: floatUp 1s linear;
+          animation: floatUp 1s linear;
 }
 
 .donation {
