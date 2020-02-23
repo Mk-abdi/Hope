@@ -1,0 +1,83 @@
+@import url(/home/mk/Desktop/Hope/Src/helpers/reset.css);
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  max-height: 4rem;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.2rem;
+}
+
+header ul li {
+  margin: 0 1rem;
+}
+
+header ul li a {
+  color: #555;
+}
+
+header ul li a:active, header ul li a:hover, header ul li a:focus {
+  color: #e7b837;
+}
+
+header ul li .btn {
+  border: 1px solid #e7b837;
+  color: #e7b837;
+}
+
+.logo-container {
+  height: 100%;
+  width: 100px;
+}
+
+.logo-container img {
+  height: auto;
+}
+
+footer .container {
+  display: -ms-grid;
+  display: grid;
+}
+
+footer .container strong {
+  font-weight: 550;
+}
+
+footer .container .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .container .links ul {
+  display: block;
+}
+
+footer .container .links ul li {
+  margin: .3rem 0;
+}
+
+footer .container .cpright {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .container p {
+  opacity: .7;
+}
+/*# sourceMappingURL=global.css.map */
