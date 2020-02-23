@@ -180,12 +180,12 @@ main {
   h1,
   p {
     color: #fff;
-    animation: floatUp 1s linear;
+    animation: floatUp.8s linear;
   }
   h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    animation: floatDown 1s linear;
+    animation: floatDown.8s linear;
   }
   .container {
     max-width: 600px;
@@ -274,7 +274,7 @@ main {
     }
 
     div:nth-child(1) {
-      animation: floatRight 1s linear;
+      animation: floatRight.8s linear;
     }
     div:nth-child(2) {
       animation: floatLeft 0.8s linear;
@@ -335,11 +335,11 @@ main {
       font-size: 3rem;
       margin: 0 0 0.5rem 0;
       text-align: center;
-      animation: floatDown 1s linear;
+      animation: floatDown.8s linear;
     }
     p {
       margin: 1rem;
-      animation: floatUp 1s linear;
+      animation: floatUp.8s linear;
     }
   }
 }
@@ -411,3 +411,32 @@ main {
 main {
   height: 100%;
 }
+
+// ARTICLE
+.main-article {
+  text-align: center;
+  margin: 2rem auto;
+  .article-title {
+    font-size: 2.5rem;
+    animation: floatDown .8s linear;
+  }
+  p {
+    max-width: 70%;
+    margin: 1rem auto;
+    word-break: break-all;
+    animation: floatUp .8s linear;
+  }
+  .img-containers {
+    display: flex;
+    justify-content: space-evenly;
+
+    div {
+      max-width: 350px;
+      animation: floatRight .8s linear;
+    }
+    div:nth-child(2) {
+      animation: floatLeft .8s linear;
+    }
+  }
+}
+
