@@ -416,4 +416,62 @@ main section {
 .grid .img-container {
   width: 400px;
 }
+
+.main-contact section {
+  background: unset;
+}
+
+.main-contact .header {
+  text-align: center;
+}
+
+.main-contact .header h1 {
+  font-size: 2.5rem;
+}
+
+.main-contact .header p {
+  max-width: 50%;
+  margin: .5rem auto;
+}
+
+.main-contact .locations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-contact .locations h3 {
+  font-size: 1.4rem;
+  margin: 0 0 .5rem 0;
+}
+
+.form {
+  margin-bottom: 3rem;
+}
+
+.form form {
+  max-width: 450px;
+  margin: 2rem auto;
+  display: -ms-grid;
+  display: grid;
+}
+
+.form form input, .form form textarea, .form form select {
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  border: 1px solid #e7b837;
+  margin: .5rem 0;
+}
+
+.btn-submit {
+  width: 10rem;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  background: #e7b837;
+  color: #fff;
+}
 /*# sourceMappingURL=main.css.map */
