@@ -8,7 +8,7 @@
   margin: auto;
 }
 
-main {
+.main-home {
   section {
     margin: 2.5rem 0;
     width: 100%;
@@ -418,13 +418,13 @@ main {
   margin: 2rem auto;
   .article-title {
     font-size: 2.5rem;
-    animation: floatDown .8s linear;
+    animation: floatDown 0.8s linear;
   }
   p {
     max-width: 70%;
     margin: 1rem auto;
     word-break: break-all;
-    animation: floatUp .8s linear;
+    animation: floatUp 0.8s linear;
   }
   .img-containers {
     display: flex;
@@ -432,11 +432,103 @@ main {
 
     div {
       max-width: 350px;
-      animation: floatRight .8s linear;
+      animation: floatRight 0.8s linear;
     }
     div:nth-child(2) {
-      animation: floatLeft .8s linear;
+      animation: floatLeft 0.8s linear;
     }
   }
 }
 
+#mobile-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: #f2f2f2;
+  border-top: 2px solid #d5d5d5;
+  display: none;
+  z-index: 100;
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    li {
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+// MOBILE VERSION
+
+@media screen and (max-width: 730px) {
+  * {
+    font-size: 16px;
+  }
+  
+  body {
+    height: 100%;
+  }
+  header {
+    justify-content: center;
+    ul {
+      display: none;
+    }
+  }
+
+  #mobile-nav {
+    display: block;
+  }
+
+main section {
+  .title { 
+    font-size: .9rem;
+    #dot { 
+      width: 7px;
+      height: 7px; 
+  }}
+}
+
+  // SEC0
+  .sec0 { 
+    .swiper-slide {
+      .text {
+        padding: 0;
+      }
+      h1 {
+        margin: 0 0 0.1rem 0;
+        font-size: 1.2rem;
+      }
+      .article-link {
+        font-size: 0.9rem;
+      }
+      .img-container {
+        width: 100%;
+      }
+    }
+    .swiper-pagination {
+      max-width: 100%;
+      top: 8rem;
+    }
+  }
+
+  // SEC1
+  .sec1 { 
+    max-width: 100%; 
+  
+    h2 {
+      font-size: 1.2rem;
+      text-align: center;
+      text-shadow: none;
+      margin: 2.5rem 0;
+    }
+    .numbers { 
+      h3 {
+        font-size: 1.2rem;
+      }
+     p {
+       font-size: .9rem;
+       margin: .5rem;
+     }
+    }
+  }
+}

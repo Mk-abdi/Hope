@@ -8,11 +8,13 @@
     <title>Hope: hope for life</title>
   </head>
   <body>
-    <header>
+     <header>
       <div class="logo-container">
         <img src="../images/logo.png" alt="hope logo" />
       </div>
-      <ul class="nav-links">
+
+      
+      <ul class="nav-list">
         <li>
           <a href="index.html" class="nav-link">Home</a>
         </li>
@@ -33,9 +35,9 @@
       </ul>
     </header>
 
+     
     <main class="main-home container">
-      <section class="sec0">
-        <!-- Swiper -->
+      <section class="sec0"> 
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -98,9 +100,8 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
-
-      <!-- MISSION -->
-      <section class="sec1">
+ 
+       <section class="sec1">
         <div class="title"><i id="dot"></i>Our Mission<i id="dot"></i></div>
         <h2>
           We're leading a global community of humanitarians to create a future
@@ -122,8 +123,7 @@
           </div>
         </div>
       </section>
-
-      <!-- FEATURED -->
+  <!--
       <div class="title"><i id="dot"></i>Featured<i id="dot"></i></div>
       <section class="sec2">
         <a href="article0.html">
@@ -163,8 +163,7 @@
           </div>
         </a>
       </section>
-
-      <!-- RECENT -->
+ 
       <div class="title"><i id="dot"></i>Recent<i id="dot"></i></div>
       <section class="sec3">
         <a href="article0.html">
@@ -203,10 +202,10 @@
         <a href="donation.html" class="btn cta-btn">
           Donate Now
         </a>
-      </div>
+      </div> -->
     </main>
 
-    <footer>
+    <!-- <footer>
       <div class="container">
         <section class="links">
           <ul class="about-list">
@@ -242,8 +241,14 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer>   -->
 
+    <!--
+      * A different Navigation list is created in the 
+      * div below when the viewport is 
+      * less than 730px 
+    -->
+    <div id="mobile-nav"></div>
     <script src="../swiper/swiper.min.js"></script>
     <script src="../js/main.js"></script>
   </body>

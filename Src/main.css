@@ -167,7 +167,7 @@ footer .container p {
   margin: auto;
 }
 
-main section {
+.main-home section {
   margin: 2.5rem 0;
   width: 100%;
   position: relative;
@@ -680,16 +680,16 @@ main {
 
 .main-article .article-title {
   font-size: 2.5rem;
-  -webkit-animation: floatDown .8s linear;
-          animation: floatDown .8s linear;
+  -webkit-animation: floatDown 0.8s linear;
+          animation: floatDown 0.8s linear;
 }
 
 .main-article p {
   max-width: 70%;
   margin: 1rem auto;
   word-break: break-all;
-  -webkit-animation: floatUp .8s linear;
-          animation: floatUp .8s linear;
+  -webkit-animation: floatUp 0.8s linear;
+          animation: floatUp 0.8s linear;
 }
 
 .main-article .img-containers {
@@ -703,12 +703,96 @@ main {
 
 .main-article .img-containers div {
   max-width: 350px;
-  -webkit-animation: floatRight .8s linear;
-          animation: floatRight .8s linear;
+  -webkit-animation: floatRight 0.8s linear;
+          animation: floatRight 0.8s linear;
 }
 
 .main-article .img-containers div:nth-child(2) {
-  -webkit-animation: floatLeft .8s linear;
-          animation: floatLeft .8s linear;
+  -webkit-animation: floatLeft 0.8s linear;
+          animation: floatLeft 0.8s linear;
+}
+
+#mobile-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: #f2f2f2;
+  border-top: 2px solid #d5d5d5;
+  display: none;
+  z-index: 100;
+}
+
+#mobile-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#mobile-nav ul li {
+  margin: 0 0.5rem;
+}
+
+@media screen and (max-width: 730px) {
+  * {
+    font-size: 16px;
+  }
+  body {
+    height: 100%;
+  }
+  header {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header ul {
+    display: none;
+  }
+  #mobile-nav {
+    display: block;
+  }
+  main section .title {
+    font-size: .9rem;
+  }
+  main section .title #dot {
+    width: 7px;
+    height: 7px;
+  }
+  .sec0 .swiper-slide .text {
+    padding: 0;
+  }
+  .sec0 .swiper-slide h1 {
+    margin: 0 0 0.1rem 0;
+    font-size: 1.2rem;
+  }
+  .sec0 .swiper-slide .article-link {
+    font-size: 0.9rem;
+  }
+  .sec0 .swiper-slide .img-container {
+    width: 100%;
+  }
+  .sec0 .swiper-pagination {
+    max-width: 100%;
+    top: 8rem;
+  }
+  .sec1 {
+    max-width: 100%;
+  }
+  .sec1 h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    text-shadow: none;
+    margin: 2.5rem 0;
+  }
+  .sec1 .numbers h3 {
+    font-size: 1.2rem;
+  }
+  .sec1 .numbers p {
+    font-size: .9rem;
+    margin: .5rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
