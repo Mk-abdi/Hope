@@ -181,10 +181,12 @@ main {
   h1,
   p {
     color: #fff;
+    animation: floatUp 1s linear;
   }
   h1 {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem; 
+    animation: floatDown 1s linear;
   }
   .container {
     max-width: 600px;
@@ -196,6 +198,18 @@ main {
   height: 100%;
   width: 100%;
   background: rgba(0, 0, 0, 0.4);
+}
+
+@keyframes floatDown {
+  from {
+    transform: translateY(-5px);
+  } 
+}
+
+@keyframes floatUp {
+  from {
+    transform: translateY(5px);
+  } 
 }
 
 .grid {
@@ -256,7 +270,26 @@ main {
       font-size: 1.4rem;
       margin: 0 0 0.5rem 0;
     }
+
+    div:nth-child(1) {
+      animation: floatRight 1s linear;
+    }
+    div:nth-child(2) {
+      animation: floatLeft .8s linear;
+    }
   }
+}
+
+@keyframes floatRight {
+  from {
+    transform: translateX(-10px);
+  } 
+}
+
+@keyframes floatLeft {
+  from {
+    transform: translateX(10px);
+  } 
 }
 
 .form {
@@ -300,9 +333,11 @@ main {
       font-size: 3rem;
       margin: 0 0 0.5rem 0;
       text-align: center;
+      animation: floatDown 1s linear;
     }
     p {
       margin: 1rem;
+      animation: floatUp 1s linear;
     }
   }
 }
