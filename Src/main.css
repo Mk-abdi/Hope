@@ -11,7 +11,7 @@
 * {
   margin: 0;
   padding: 0;
-  font: 16px arial, sans-serif;
+  font: 17px arial, sans-serif;
   outline: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -58,6 +58,7 @@ img {
 html {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 header {
@@ -488,14 +489,18 @@ main section {
   margin: 0 0 0.5rem 0;
 }
 
+.main-contact .locations address {
+  font-size: 0.9rem;
+}
+
 .main-contact .locations div:nth-child(1) {
   -webkit-animation: floatRight 1s linear;
           animation: floatRight 1s linear;
 }
 
 .main-contact .locations div:nth-child(2) {
-  -webkit-animation: floatLeft .8s linear;
-          animation: floatLeft .8s linear;
+  -webkit-animation: floatLeft 0.8s linear;
+          animation: floatLeft 0.8s linear;
 }
 
 @-webkit-keyframes floatRight {

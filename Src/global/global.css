@@ -76,7 +76,7 @@ footer .container .links ul {
 }
 
 footer .container .links ul li {
-  margin: .3rem 0;
+  margin: 0.3rem 0;
 }
 
 footer .container .cpright {
@@ -88,6 +88,6 @@ footer .container .cpright {
 }
 
 footer .container p {
-  opacity: .7;
+  opacity: 0.7;
 }
 /*# sourceMappingURL=global.css.map */
