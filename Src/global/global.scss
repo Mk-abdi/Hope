@@ -1,77 +1,77 @@
-
 @import "../helpers/variables";
 
 // Global header
 
 header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  max-height: 4rem;
+  background: #fff;
+  z-index: 50;
+  ul {
     display: flex;
-    justify-content: space-between;
-    max-width: 1100px;
-    margin: auto; 
-    max-height: 4rem;
-    background: #fff;
-    z-index: 50;
-    ul {
-      display: flex;
-      padding: 1.2rem;
-      li {
-        margin: 0 1rem;
-        a {
-          color: #555;
-          &:active, &:hover, &:focus {
-            color: $yellow0;
-          }
+    padding: 1.2rem;
+    li {
+      margin: 0 1rem;
+      a {
+        color: #555;
+        &:active,
+        &:hover,
+        &:focus {
+          color: $yellow0;
         }
-  
-        .btn {
-            border: 1px solid $yellow0;
-            color: $yellow0;
-        }
+      }
+
+      .btn {
+        border: 1px solid $yellow0;
+        color: $yellow0;
       }
     }
   }
-  
-  .logo-container {
-    height: 90%;
-    width: 80px; 
-    img {
-      height: auto;
-    }
+}
+
+.logo-container {
+  height: 90%;
+  width: 80px;
+  img {
+    height: auto;
   }
-   
-  
-  // Global Footer 
-  footer {
-    padding: 2.5rem 1rem 1rem 1rem;
-    border-top: 1px solid #e3e3e3;
-    background: #f7f7f7;
+}
+
+// Global Footer
+footer {
+  padding: 2.5rem 1rem 1rem 1rem;
+  border-top: 1px solid #e3e3e3;
+  background: #f7f7f7;
   .container {
-    display: grid; 
+    display: grid;
     strong {
       font-weight: 550;
     }
-    
+
     .links {
       display: flex;
       justify-content: space-around;
-  
+
       ul {
         display: block;
         li {
-          margin: .3rem 0;
+          margin: 0.3rem 0;
         }
       }
     }
-  
+
     .cpright {
       display: grid;
       justify-content: center;
     }
     p {
-      opacity: .7;
+      opacity: 0.7;
     }
   }
-  }
+}

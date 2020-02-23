@@ -2,7 +2,6 @@
 @import "./helpers/variables";
 @import "./helpers/mixins";
 @import "./global/global";
-@import "./About";
 
 .container {
   max-width: 1100px;
@@ -185,7 +184,7 @@ main {
   }
   h1 {
     font-size: 3rem;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
     animation: floatDown 1s linear;
   }
   .container {
@@ -203,13 +202,13 @@ main {
 @keyframes floatDown {
   from {
     transform: translateY(-5px);
-  } 
+  }
 }
 
 @keyframes floatUp {
   from {
     transform: translateY(5px);
-  } 
+  }
 }
 
 .grid {
@@ -270,12 +269,15 @@ main {
       font-size: 1.4rem;
       margin: 0 0 0.5rem 0;
     }
+    address {
+      font-size: 0.9rem;
+    }
 
     div:nth-child(1) {
       animation: floatRight 1s linear;
     }
     div:nth-child(2) {
-      animation: floatLeft .8s linear;
+      animation: floatLeft 0.8s linear;
     }
   }
 }
@@ -283,13 +285,13 @@ main {
 @keyframes floatRight {
   from {
     transform: translateX(-10px);
-  } 
+  }
 }
 
 @keyframes floatLeft {
   from {
     transform: translateX(10px);
-  } 
+  }
 }
 
 .form {
