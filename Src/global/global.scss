@@ -40,3 +40,35 @@ header {
   }
    
   
+  // Global Footer 
+  footer {
+    padding: 2.5rem 1rem 1rem 1rem;
+    border-top: 1px solid #e3e3e3;
+    background: #f7f7f7;
+  .container {
+    display: grid; 
+    strong {
+      font-weight: 550;
+    }
+    
+    .links {
+      display: flex;
+      justify-content: space-around;
+  
+      ul {
+        display: block;
+        li {
+          margin: .3rem 0;
+        }
+      }
+    }
+  
+    .cpright {
+      display: grid;
+      justify-content: center;
+    }
+    p {
+      opacity: .7;
+    }
+  }
+  }

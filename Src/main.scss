@@ -2,13 +2,8 @@
 @import "./helpers/variables";
 @import "./helpers/mixins";
 @import "./global/global";
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-}
-
+@import "./About";
+  
 .container {
   max-width: 1100px;
   margin: auto;
@@ -170,38 +165,70 @@ main {
 
   .cta-btn {
     background: $yellow0;
-    color: #fff;
+    color: #fff; 
   }
 }
+ 
 
-footer {
-  padding: 2.5rem 1rem 1rem 1rem;
-  border-top: 1px solid #e3e3e3;
-  background: #f7f7f7;
-.container {
-  display: grid; 
-  strong {
-    font-weight: 550;
+.main-about {
+  display: grid;
+  position: relative; 
+}
+
+.hero { 
+  width: 100%; 
+  height: 600px;
+  margin: .5rem 0 0 0; 
+  background: url('../Build/images/kid.png') no-repeat center center/cover;
+h1, p {
+  color: #fff; 
+}
+h1 {
+  font-size: 3rem;
+  margin-bottom: .5rem;
+}
+  .container {
+  max-width: 600px;  
+  padding-top: 3rem;
+}
+
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.4);
+}
+
+.grid {
+  display: grid;
+  .grid-0, .grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
   
-  .links {
-    display: flex;
-    justify-content: space-around;
+  .grid-1 {
+    margin-top: 0;
+    grid-template-areas: 
+    "img txt";
 
-    ul {
-      display: block;
-      li {
-        margin: .3rem 0;
-      }
+    .img-container {
+      grid-area:  img;
+    }
+
+    .text{
+      grid-area:  txt;
     }
   }
 
-  .cpright {
-    display: grid;
-    justify-content: center;
+  .text {
+    max-width: 400px;
+    h3 {
+      font-size: 2rem;
+      margin: 0 0 .5rem 0;
+    }
   }
-  p {
-    opacity: .7;
+  .img-container {
+    width: 400px; 
   }
-}
 }
