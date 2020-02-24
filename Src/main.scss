@@ -458,6 +458,18 @@ main {
   }
 }
 
+#small-screen-cta { 
+  max-height: 2.5rem;
+  display: none;
+  button {
+    background: unset;
+  border: 1px solid $yellow0;
+  color: $yellow0;
+  margin: .3rem 0 0 0; 
+  }
+}
+
+
 // MOBILE VERSION
 
 @media screen and (max-width: 730px) {
@@ -469,10 +481,15 @@ main {
     height: 100%;
   }
   header {
-    justify-content: center;
+    justify-content: space-around;
+    padding: .3rem;
     ul {
       display: none;
     }
+  }
+
+  #small-screen-cta {
+    display: block;
   }
 
   #mobile-nav {
@@ -550,3 +567,6 @@ main {
     }
   }
 }
+
+
+ 

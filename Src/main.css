@@ -736,6 +736,18 @@ main {
   margin: 0 0.5rem;
 }
 
+#small-screen-cta {
+  max-height: 2.5rem;
+  display: none;
+}
+
+#small-screen-cta button {
+  background: unset;
+  border: 1px solid #e7b837;
+  color: #e7b837;
+  margin: .3rem 0 0 0;
+}
+
 @media screen and (max-width: 730px) {
   * {
     font-size: 16px;
@@ -744,12 +756,15 @@ main {
     height: 100%;
   }
   header {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: .3rem;
   }
   header ul {
     display: none;
+  }
+  #small-screen-cta {
+    display: block;
   }
   #mobile-nav {
     display: block;
