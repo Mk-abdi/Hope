@@ -62,12 +62,6 @@ img {
   height: 100%;
 }
 
-html {
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -168,11 +162,10 @@ footer .container p {
 }
 
 .main-home section {
-  margin: 2.5rem 0;
+  margin: 5rem 0;
   width: 100%;
   position: relative;
   background: #faf9f9;
-  max-height: 400px;
   padding: 1rem 0.5rem;
 }
 
@@ -180,6 +173,7 @@ footer .container p {
   max-width: 20rem;
   margin: auto;
   text-align: center;
+  margin: 0 auto;
 }
 
 .title #dot {
@@ -232,7 +226,7 @@ footer .container p {
 
 .swiper-pagination {
   max-width: 100px;
-  top: 20rem;
+  top: 18rem;
 }
 
 .swiper-pagination span {
@@ -756,9 +750,16 @@ main {
     height: 100%;
   }
   header {
+<<<<<<< HEAD
     -ms-flex-pack: distribute;
         justify-content: space-around;
     padding: 0.3rem;
+=======
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: .5rem;
+>>>>>>> fix
   }
   header ul {
     display: none;
@@ -790,7 +791,7 @@ main {
     width: 100%;
   }
   .sec0 .swiper-pagination {
-    max-width: 100%;
+    max-width: 100px;
     top: 8rem;
   }
   .sec1 {
@@ -828,6 +829,14 @@ main {
     margin-top: 0;
     width: 280px;
     height: 300px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .swiper-pagination {
+    width: 100%;
+    top: 8rem;
+    margin-left: 10rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
