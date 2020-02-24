@@ -458,17 +458,16 @@ main {
   }
 }
 
-#small-screen-cta { 
+#small-screen-cta {
   max-height: 2.5rem;
   display: none;
   button {
     background: unset;
-  border: 1px solid $yellow0;
-  color: $yellow0;
-  margin: .3rem 0 0 0; 
+    border: 1px solid $yellow0;
+    color: $yellow0;
+    margin: 0.3rem 0 0 0;
   }
 }
-
 
 // MOBILE VERSION
 
@@ -476,13 +475,13 @@ main {
   * {
     font-size: 16px;
   }
-  
+
   body {
     height: 100%;
   }
   header {
     justify-content: space-around;
-    padding: .3rem;
+    padding: 0.3rem;
     ul {
       display: none;
     }
@@ -496,17 +495,18 @@ main {
     display: block;
   }
 
-.main-home {
-  .title { 
-    font-size: .9rem;
-    #dot { 
-      width: 7px;
-      height: 7px; 
-  }}
-}
+  .main-home {
+    .title {
+      font-size: 0.9rem;
+      #dot {
+        width: 7px;
+        height: 7px;
+      }
+    }
+  }
 
   // SEC0
-  .sec0 { 
+  .sec0 {
     .swiper-slide {
       .text {
         padding: 0;
@@ -529,28 +529,29 @@ main {
   }
 
   // SEC1
-  .sec1 { 
-    max-width: 100%; 
-  
+  .sec1 {
+    max-width: 100%;
+
     h2 {
       font-size: 1.2rem;
       text-align: center;
       text-shadow: none;
       margin: 2.5rem 0;
     }
-    .numbers { 
+    .numbers {
       h3 {
         font-size: 1.2rem;
       }
-     p {
-       font-size: .9rem;
-       margin: .5rem;
-     }
+      p {
+        font-size: 0.9rem;
+        margin: 0.5rem;
+      }
     }
   }
 
   // SEC2
-  .sec2, .sec3 {
+  .sec2,
+  .sec3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-content: center;
@@ -558,7 +559,7 @@ main {
     grid-gap: 2rem;
   }
   // SEC3
-  .sec3 { 
+  .sec3 {
     margin-top: 5rem;
     .second {
       margin-top: 0;
@@ -567,6 +568,3 @@ main {
     }
   }
 }
-
-
- 

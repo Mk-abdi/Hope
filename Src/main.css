@@ -745,7 +745,7 @@ main {
   background: unset;
   border: 1px solid #e7b837;
   color: #e7b837;
-  margin: .3rem 0 0 0;
+  margin: 0.3rem 0 0 0;
 }
 
 @media screen and (max-width: 730px) {
@@ -758,7 +758,7 @@ main {
   header {
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    padding: .3rem;
+    padding: 0.3rem;
   }
   header ul {
     display: none;
@@ -770,7 +770,7 @@ main {
     display: block;
   }
   .main-home .title {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .main-home .title #dot {
     width: 7px;
@@ -806,10 +806,11 @@ main {
     font-size: 1.2rem;
   }
   .sec1 .numbers p {
-    font-size: .9rem;
-    margin: .5rem;
+    font-size: 0.9rem;
+    margin: 0.5rem;
   }
-  .sec2, .sec3 {
+  .sec2,
+  .sec3 {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
