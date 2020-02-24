@@ -10,11 +10,10 @@
 
 .main-home {
   section {
-    margin: 2.5rem 0;
+    margin: 5rem 0;
     width: 100%;
     position: relative;
-    background: #faf9f9;
-    max-height: 400px;
+    background: #faf9f9; 
     padding: 1rem 0.5rem;
   }
 }
@@ -23,6 +22,8 @@
   max-width: 20rem;
   margin: auto;
   text-align: center;
+  margin: 0 auto;
+
   #dot {
     margin: 0 1rem;
     width: 10px;
@@ -66,7 +67,7 @@
 
 .swiper-pagination {
   max-width: 100px;
-  top: 20rem;
+  top: 18rem;
   span {
     border-radius: 0;
     width: 13px;
@@ -481,8 +482,8 @@ main {
     height: 100%;
   }
   header {
-    justify-content: space-around;
-    padding: .3rem;
+    justify-content: space-between;
+    padding: .5rem;
     ul {
       display: none;
     }
@@ -496,7 +497,7 @@ main {
     display: block;
   }
 
-.main-home {
+.main-home { 
   .title { 
     font-size: .9rem;
     #dot { 
@@ -506,7 +507,7 @@ main {
 }
 
   // SEC0
-  .sec0 { 
+  .sec0 {  
     .swiper-slide {
       .text {
         padding: 0;
@@ -523,7 +524,7 @@ main {
       }
     }
     .swiper-pagination {
-      max-width: 100%;
+      max-width: 100px;
       top: 8rem;
     }
   }
@@ -565,6 +566,14 @@ main {
       width: 280px;
       height: 300px;
     }
+  }
+}
+
+@media screen and (max-width: 450px){
+  .swiper-pagination {
+     width: 100%;
+    top: 8rem; 
+    margin-left: 10rem;
   }
 }
 
